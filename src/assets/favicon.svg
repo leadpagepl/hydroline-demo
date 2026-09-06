@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!--
+    HYDROLINE mark.
+    A geometric H built from two pipe-thick verticals joined by a single
+    crossbar — reads as a monogram first, a pipe coupling second. No
+    flourishes, no thin strokes: every bar is thick enough to survive
+    a 16px favicon.
+  -->
+  <rect width="32" height="32" rx="5" fill="#FFFFFF"/>
+  <rect x="8" y="5" width="5" height="22" fill="#151719"/>
+  <rect x="19" y="5" width="5" height="22" fill="#151719"/>
+  <rect x="13" y="13.5" width="6" height="5" fill="#151719"/>
+</svg>

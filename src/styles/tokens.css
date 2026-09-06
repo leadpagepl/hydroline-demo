@@ -1,0 +1,74 @@
+:root {
+  /* ---- surface ---- */
+  --paper:      #F5F6F7;
+  --paper-2:    #EEF0F1;
+  --white:      #FFFFFF;
+
+  /* ---- ink ---- */
+  --ink:        #151719;
+  --ink-2:      #1D2023;
+  --ink-3:      #292D31;
+  /* #6F7479 from the palette lands at 4.36:1 on the paper ground — just under
+     AA for body copy. These are the same cool gray, nudged until text passes. */
+  --gray:       #666B70;   /* 4.97:1 on --paper */
+  --gray-2:     #6C7176;   /* 4.56:1 — placeholders, de-emphasised meta */
+  --gray-dk:    #9AA0A6;   /* 6.8:1 on --ink, for the dark sections */
+
+  /* ---- structure ---- */
+  --rule:       #DDE1E4;
+  --rule-soft:  #E7EAEC;
+  --rule-dark:  #33383D;
+
+  /* ---- media ---- */
+  /* The plain accents are used for graphics (1px runs, dots, rules) where 3:1
+     is the bar. The -ink / -dk variants are for the rare places an accent is
+     set as text and has to clear 4.5:1. */
+  --cold:       #2677C9;
+  --cold-ink:   #1F68B4;
+  --cold-tint:  rgba(38, 119, 201, 0.10);
+  --hot:        #D84B3E;
+  --hot-ink:    #C0392C;
+  --hot-dk:     #E4675A;
+  --hot-tint:   rgba(216, 75, 62, 0.10);
+
+  /* ---- type ---- */
+  --font-display: 'Archivo Variable', 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Inter Variable', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+  --t-hero:     clamp(3.05rem, 7.1vw, 7.6rem);
+  --t-section:  clamp(2.5rem, 5vw, 5.1rem);
+  --t-large:    clamp(1.75rem, 2.6vw, 2.9rem);
+  --t-lead:     clamp(1.0625rem, 1.15vw, 1.25rem);
+  --t-body:     clamp(0.975rem, 0.95vw, 1.0625rem);
+  --t-small:    0.875rem;
+  --t-tech:     0.75rem;    /* micro labels — eyebrows, captions, overlays */
+  --t-tech-sm:  0.6875rem;
+  --t-ui:       0.78rem;    /* buttons and controls */
+  --t-ui-sm:    0.72rem;
+
+  /* ---- layout ---- */
+  --maxw:       1520px;
+  --pad:        clamp(20px, 5.2vw, 88px);
+  --rail:       clamp(20px, 5.2vw, 88px);
+
+  --gap:        clamp(20px, 2.2vw, 34px);
+  --sec-y:      clamp(88px, 11vw, 180px);
+  --sec-y-lg:   clamp(112px, 14vw, 232px);
+
+  /* ---- motion ---- */
+  --ease:       cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io:    cubic-bezier(0.65, 0, 0.35, 1);
+  --dur:        720ms;
+  --dur-fast:   380ms;
+
+  /* ---- radii ---- */
+  --r-btn:      5px;
+  --r-card:     13px;
+  --r-img:      4px;
+  --r-pill:     999px;
+
+  /* ---- controls ---- */
+  --ctrl-h:     40px;
+  --btn-h:      46px;
+  --btn-h-lg:   54px;
+}
