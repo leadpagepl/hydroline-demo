@@ -23,22 +23,20 @@ export default function About() {
             tag="h2"
             id="about-h"
             className="display about__title"
-            lines={['ZAKŁAD', 'HYDRAULICZNY', 'JACKA CZUBERA']}
+            lines={['O FIRMIE']}
           />
           <Reveal delay={0.12}>
             <p className="lead about__lead">
-              Firma działa od 1997 roku. Siedziba zakładu znajduje się
-              przy ul. Stefana Jaracza 76 w Łodzi.
+              Od 1997 roku zajmuję się instalacjami hydraulicznymi w Łodzi.
             </p>
             <p className="about__p">
-              Zajmujemy się instalacjami wodnymi, kanalizacyjnymi, grzewczymi
-              i gazowymi. Robimy nowe instalacje oraz modernizujemy stare.
+              Montaż, naprawa i wymiana instalacji.
             </p>
             <ul className="about__pts">
-              <li><span className="tech">Od 1997 roku</span></li>
-              <li><span className="tech">Łódź, ul. Stefana Jaracza 76</span></li>
-              <li><span className="tech">Nowe instalacje i modernizacje</span></li>
-              <li><span className="tech">Mniejsze prace i większe instalacje</span></li>
+              <li><span className="tech">Instalacje wodne</span></li>
+              <li><span className="tech">Ogrzewanie</span></li>
+              <li><span className="tech">Kanalizacja</span></li>
+              <li><span className="tech">Naprawy</span></li>
             </ul>
           </Reveal>
         </div>

@@ -35,18 +35,17 @@ export default function Contact() {
             tag="h2"
             id="ct-h"
             className="display ct__title"
-            lines={['POROZMAWIAJMY', 'O TWOJEJ', 'INSTALACJI.']}
+            lines={['KONTAKT']}
           />
           <Reveal delay={0.12}>
             <p className="lead ct__lead">
-              Masz instalację do wykonania albo naprawy?
-              Skontaktuj się i powiedz, czego potrzebujesz.
+              Masz problem z instalacją? Zadzwoń.
             </p>
 
             <div className="ct__alt">
               <p className="tech ct__alt-h">Telefon</p>
-              <a href="tel:+48508324246" className="ct__tel">+48 508 324 246</a>
-              <p className="ct__alt-note">Zadzwoń i powiedz, czego potrzebujesz.</p>
+              <a href="tel:+48508324246" className="ct__tel">508 324 246</a>
+              <p className="ct__alt-note">Zadzwoń.</p>
             </div>
 
             <dl className="ct__facts">
@@ -64,7 +63,7 @@ export default function Contact() {
                   aria-controls="ct-mapa"
                   onClick={toggleMap}
                 >
-                  {mapOpen ? 'Ukryj mapę' : 'Pokaż na mapie'}
+                  {mapOpen ? 'UKRYJ MAPĘ' : 'POKAŻ NA MAPIE'}
                 </button>
               </div>
             </dl>
@@ -129,7 +128,7 @@ export default function Contact() {
                 <Arrow />
               </button>
               <p className="form__note">
-                Im więcej szczegółów, tym łatwiej wycenić pracę.
+                Opisz pracę.
               </p>
             </div>
 

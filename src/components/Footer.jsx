@@ -29,7 +29,7 @@ export default function Footer() {
             <ul>
               <li>ul. Stefana Jaracza 76</li>
               <li>90-251 Łódź</li>
-              <li><a href="tel:+48000000000">+48 XXX XXX XXX</a></li>
+              <li><a href="tel:+48508324246">508 324 246</a></li>
             </ul>
           </div>
 

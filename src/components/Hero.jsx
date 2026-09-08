@@ -4,7 +4,7 @@ import { HeroFlow } from '../ui/Flow.jsx'
 import { Arrow } from './Nav.jsx'
 
 const EASE = [0.22, 1, 0.36, 1]
-const LINES = ['INSTALACJE', 'ZROBIONE', 'PORZĄDNIE.']
+const LINES = ['INSTALACJE', 'HYDRAULICZNE', 'W ŁODZI']
 
 export default function Hero() {
   return (
@@ -20,10 +20,10 @@ export default function Hero() {
         >
           <p className="tech hero__eyebrow">
             <span className="dot dot--cold" />
-            Zakład hydrauliczny
-            <span className="sep">•</span>Łódź
+            Jacek Czuber
+            <span className="sep">•</span>Zakład Hydrauliczny
           </p>
-          <a href="tel:+48000000000" className="hero__tel tech">+48 XXX XXX XXX</a>
+          <a href="tel:+48508324246" className="hero__tel tech">508 324 246</a>
         </m.div>
 
         <h1 className="display hero__title">
@@ -49,21 +49,20 @@ export default function Hero() {
         >
           <div className="hero__foot-copy">
             <p className="lead hero__lead">
-              Woda, kanalizacja, ogrzewanie i instalacje gazowe.
-              Od małych prac po większe instalacje w budynkach.
+              Montaż i naprawa instalacji wodnych i grzewczych.
             </p>
             <p className="hero__since">
-              Zakład Hydrauliczny Jacek Czuber działa od 1997 roku.
+              Firma działa od 1997 roku.
             </p>
           </div>
 
           <div className="hero__ctas">
             <a href="#kontakt" className="btn btn--dark btn--lg">
-              <span>Zapytaj o wycenę</span>
+              <span>Zadzwoń</span>
               <Arrow />
             </a>
-            <a href="#realizacje" className="btn btn--ghost btn--lg">
-              <span>Zobacz realizacje</span>
+            <a href="#uslugi" className="btn btn--ghost btn--lg">
+              <span>Zobacz usługi</span>
               <Arrow />
             </a>
           </div>
@@ -85,7 +84,7 @@ export default function Hero() {
         />
         <p className="hero__hint tech">
           <span className="hero__hint-line" />
-          Przesuń kursorem, żeby zobaczyć instalację
+          Przed i po
         </p>
       </m.div>
     </section>

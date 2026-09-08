@@ -20,12 +20,11 @@ export default function Craft() {
       <div className="wrap">
         <Reveal className="sec-head sec-head--split">
           <div>
-            <p className="tech sec-head__eyebrow">Detale</p>
-            <h2 className="h-section" id="craft-h">Porządek<br />w instalacji<br />ma znaczenie</h2>
+            <p className="tech sec-head__eyebrow">Instalacja</p>
+            <h2 className="h-section" id="craft-h">Detale</h2>
           </div>
           <p className="lead">
-            Dobra instalacja powinna być dobrze połączona i łatwa
-            do późniejszego serwisu.
+            Połączenia muszą być szczelne. Zawory muszą być dostępne.
           </p>
         </Reveal>
 
@@ -52,8 +51,7 @@ export default function Craft() {
         </div>
 
         <p className="craft__note">
-          Czerwony to zasilanie, niebieski to powrót. Trzymamy ten sam porządek
-          na całej instalacji, żeby dało się ją później obsłużyć.
+          Czerwony to zasilanie. Niebieski to powrót.
         </p>
 
         <div className="craft__plate craft__plate--b">

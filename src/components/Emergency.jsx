@@ -15,20 +15,19 @@ export default function Emergency() {
             tag="h2"
             id="emg-h"
             className="display emg__title"
-            lines={['ROBIMY TEŻ', 'WIĘKSZE', 'INSTALACJE.']}
+            lines={['WIĘKSZE', 'INSTALACJE']}
           />
           <Reveal delay={0.12}>
             <p className="lead emg__lead">
-              Zakład wykonywał również prace instalacyjne w budynkach
-              wielorodzinnych.
+              Wykonuję instalacje w budynkach wielorodzinnych.
             </p>
             <div className="emg__ctas">
               <a href="#kontakt" className="btn btn--light btn--lg">
-                <span>Zapytaj o wycenę</span>
+                <span>Zadzwoń</span>
                 <Arrow />
               </a>
-              <a href="tel:+48000000000" className="emg__tel tech">
-                +48 XXX XXX XXX
+              <a href="tel:+48508324246" className="emg__tel tech">
+                508 324 246
               </a>
             </div>
             <ul className="emg__list">

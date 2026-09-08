@@ -7,12 +7,11 @@ export default function Projects() {
       <div className="wrap">
         <Reveal className="sec-head sec-head--split">
           <div>
-            <p className="tech sec-head__eyebrow">Nasze prace</p>
-            <h2 className="h-section" id="proj-h">Od małej naprawy<br />po większą<br />instalację</h2>
+            <p className="tech sec-head__eyebrow">Przed i po</p>
+            <h2 className="h-section" id="proj-h">Realizacje</h2>
           </div>
           <p className="lead">
-            Pracujemy przy mieszkaniach, domach i większych budynkach.
-            Przesuń suwak, aby porównać.
+            Instalacje wodne i grzewcze.
           </p>
         </Reveal>
       </div>
@@ -20,7 +19,7 @@ export default function Projects() {
       <article className="case wrap" aria-labelledby="case-1">
         <header className="case__head">
           <span className="case__n tech">Realizacja 01</span>
-          <h3 className="case__t" id="case-1">Modernizacja kotłowni</h3>
+          <h3 className="case__t" id="case-1">Kotłownia</h3>
           <p className="case__cat tech"><span className="dot dot--hot" />Ogrzewanie</p>
         </header>
 
@@ -38,11 +37,11 @@ export default function Projects() {
         <dl className="case__meta">
           <div>
             <dt className="tech">Co było</dt>
-            <dd>Stary, rozbudowany układ. Trudno było dojść do zaworów.</dd>
+            <dd>Stare rury i zawory.</dd>
           </div>
           <div>
             <dt className="tech">Co jest teraz</dt>
-            <dd>Prostszy układ. Widać, co gdzie idzie, i da się to obsłużyć.</dd>
+            <dd>Nowe rury i zawory.</dd>
           </div>
           <div>
             <dt className="tech">Zakres</dt>
@@ -55,23 +54,23 @@ export default function Projects() {
         <div className="case__col">
           <header className="case__head">
             <span className="case__n tech">Realizacja 02</span>
-            <h3 className="case__t" id="case-2">Nowa instalacja wodna</h3>
+            <h3 className="case__t" id="case-2">Instalacja wodna</h3>
             <p className="case__cat tech"><span className="dot dot--cold" />Woda i kanalizacja</p>
           </header>
           <p className="case__body">
-            Instalacja działała, ale rury szły bez ładu i nie dało się do nich dojść.
+            Wymiana instalacji wodnej.
           </p>
           <dl className="case__meta case__meta--stack">
             <div>
               <dt className="tech">Co zrobiliśmy</dt>
-              <dd>Wymiana zużytych elementów, nowe zawory i poprawione połączenia.</dd>
+              <dd>Nowe rury, zawory i połączenia.</dd>
             </div>
             <div>
               <dt className="tech">Zakres</dt>
               <dd>Instalacja wodna i kanalizacyjna.</dd>
             </div>
           </dl>
-          <p className="case__hint tech">Przesuń w pionie, aby porównać</p>
+          <p className="case__hint tech">Przed i po</p>
         </div>
 
         <Compare

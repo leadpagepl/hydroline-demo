@@ -41,8 +41,8 @@ export default function MobileBar() {
           exit={{ y: '130%' }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
         >
-          <a href="tel:+48000000000" className="mbar__b mbar__b--ghost">Zadzwoń</a>
-          <a href="#kontakt" className="mbar__b mbar__b--dark">Zapytaj o wycenę</a>
+          <a href="tel:+48508324246" className="mbar__b mbar__b--ghost">Zadzwoń</a>
+          <a href="#kontakt" className="mbar__b mbar__b--dark">Kontakt</a>
         </m.div>
       )}
     </AnimatePresence>

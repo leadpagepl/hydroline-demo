@@ -63,11 +63,10 @@ export default function Reviews() {
         <Reveal className="sec-head sec-head--split">
           <div>
             <p className="tech sec-head__eyebrow">Opinie</p>
-            <h2 className="h-section" id="revs-h">Opinie klientów</h2>
+            <h2 className="h-section" id="revs-h">Opinie</h2>
           </div>
           <p className="lead">
-            Nie wpisujemy tu wymyślonych opinii ani ocen. Miejsca uzupełnimy wtedy, kiedy
-            zbierzemy prawdziwe wypowiedzi z realizacji.
+            Opinie klientów.
           </p>
         </Reveal>
       </div>

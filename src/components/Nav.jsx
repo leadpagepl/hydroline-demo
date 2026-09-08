@@ -46,7 +46,7 @@ export default function Nav() {
 
         <div className="nav__end">
           <a href="#kontakt" className="btn btn--dark nav__cta">
-            <span>Zapytaj o wycenę</span>
+            <span>Zadzwoń</span>
             <Arrow />
           </a>
           <button
@@ -92,10 +92,10 @@ export default function Nav() {
               </ul>
               <div className="menu__foot">
                 <a href="#kontakt" className="btn btn--dark" onClick={() => setOpen(false)}>
-                  <span>Zapytaj o wycenę</span>
+                  <span>Zadzwoń</span>
                   <Arrow />
                 </a>
-                <a href="tel:+48000000000" className="menu__tel tech">+48 XXX XXX XXX</a>
+                <a href="tel:+48508324246" className="menu__tel tech">508 324 246</a>
               </div>
             </div>
           </m.div>

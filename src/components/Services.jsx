@@ -3,17 +3,17 @@ import { Reveal } from '../ui/Reveal.jsx'
 
 const SERVICES = [
   { n: '01', t: 'Instalacje wodne', a: 'cold',
-    d: 'Nowe instalacje zimnej i ciepłej wody. Wymiana starych rur i podłączeń.' },
-  { n: '02', t: 'Kanalizacja', a: 'cold',
-    d: 'Odpływy, piony kanalizacyjne i podłączenia urządzeń.' },
-  { n: '03', t: 'Centralne ogrzewanie', a: 'hot',
-    d: 'Nowe instalacje grzewcze oraz wymiana i modernizacja istniejących.' },
-  { n: '04', t: 'Instalacje gazowe', a: 'hot',
-    d: 'Montaż i modernizacja instalacji gazowych.' },
-  { n: '05', t: 'Ciepła woda', a: 'hot',
-    d: 'Instalacje ciepłej wody w mieszkaniach i większych budynkach.' },
-  { n: '06', t: 'Większe instalacje', a: 'cold',
-    d: 'Prace instalacyjne także w budynkach wielorodzinnych i większych obiektach.' },
+    d: 'Montaż nowych instalacji wodnych.' },
+  { n: '02', t: 'Ogrzewanie', a: 'cold',
+    d: 'Montaż i naprawa instalacji grzewczych.' },
+  { n: '03', t: 'Kanalizacja', a: 'hot',
+    d: 'Naprawa i wymiana instalacji kanalizacyjnych.' },
+  { n: '04', t: 'Montaż armatury', a: 'hot',
+    d: 'Montaż baterii, umywalek, WC i innych urządzeń.' },
+  { n: '05', t: 'Naprawy', a: 'hot',
+    d: 'Naprawa przecieków i usterek.' },
+  { n: '06', t: 'Wymiana instalacji', a: 'cold',
+    d: 'Wymiana starych rur i instalacji.' },
 ]
 
 export default function Services() {
@@ -23,11 +23,10 @@ export default function Services() {
     <section className="svc" id="uslugi" aria-labelledby="svc-h">
       <div className="wrap">
         <Reveal className="sec-head">
-          <p className="tech sec-head__eyebrow">Zakres</p>
-          <h2 className="h-section" id="svc-h">Czym się zajmujemy</h2>
+          <p className="tech sec-head__eyebrow">Usługi</p>
+          <h2 className="h-section" id="svc-h">Usługi</h2>
           <p className="lead sec-head__lead">
-            Robimy nowe instalacje, wymieniamy stare i poprawiamy te,
-            które wymagają naprawy.
+            Montaż, naprawa i wymiana instalacji.
           </p>
         </Reveal>
 
