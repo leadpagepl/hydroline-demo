@@ -4,9 +4,22 @@ import { Arrow } from './Nav.jsx'
 
 const KINDS = ['Instalacja wodna', 'Kanalizacja', 'Ogrzewanie', 'Ciepła woda', 'Instalacja gazowa', 'Naprawa', 'Inne']
 
+// Keyless Google embed — no API key, no cookie banner of our own.
+const MAP_QUERY = 'ul. Stefana Jaracza 76, 90-251 Łódź'
+const MAP_SRC = `https://maps.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&z=16&hl=pl&output=embed`
+
 export default function Contact() {
   const [kind, setKind] = useState('Nowa instalacja')
   const [sent, setSent] = useState(false)
+  const [mapOpen, setMapOpen] = useState(false)
+  // The embed is only mounted once the visitor asks for it, then stays put so
+  // collapsing animates instead of tearing the iframe down.
+  const [mapMounted, setMapMounted] = useState(false)
+
+  const toggleMap = () => {
+    setMapMounted(true)
+    setMapOpen((v) => !v)
+  }
 
   const onSubmit = (e) => {
     e.preventDefault()
@@ -32,8 +45,8 @@ export default function Contact() {
 
             <div className="ct__alt">
               <p className="tech ct__alt-h">Telefon</p>
-              <a href="tel:+48000000000" className="ct__tel">+48 XXX XXX XXX</a>
-              <p className="ct__alt-note is-placeholder">Numer telefonu do uzupełnienia.</p>
+              <a href="tel:+48508324246" className="ct__tel">+48 508 324 246</a>
+              <p className="ct__alt-note">Zadzwoń i powiedz, czego potrzebujesz.</p>
             </div>
 
             <dl className="ct__facts">
@@ -44,16 +57,30 @@ export default function Contact() {
               <div>
                 <dt className="tech">Adres</dt>
                 <dd>ul. Stefana Jaracza 76<br />90-251 Łódź</dd>
-                <a
+                <button
+                  type="button"
                   className="ctrl ct__map"
-                  href="https://www.google.com/maps/search/?api=1&query=ul.+Stefana+Jaracza+76%2C+90-251+%C5%81%C3%B3d%C5%BA"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  aria-expanded={mapOpen}
+                  aria-controls="ct-mapa"
+                  onClick={toggleMap}
                 >
-                  Pokaż na mapie
-                </a>
+                  {mapOpen ? 'Ukryj mapę' : 'Pokaż na mapie'}
+                </button>
               </div>
             </dl>
+
+            <div id="ct-mapa" className={`ct__mapbox ${mapOpen ? 'is-open' : ''}`}>
+              {/* Google is only contacted once src is filled in on first open. */}
+              <iframe
+                className="ct__mapframe"
+                src={mapMounted ? MAP_SRC : undefined}
+                title="Mapa — Jacek Czuber, Zakład Hydrauliczny, ul. Stefana Jaracza 76, 90-251 Łódź"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                tabIndex={mapOpen ? undefined : -1}
+                aria-hidden={mapOpen ? undefined : 'true'}
+              />
+            </div>
           </Reveal>
         </div>
 

@@ -1004,6 +1004,32 @@
 .ct__facts dd { margin: 0; font-size: var(--t-small); line-height: 1.62; }
 .ct__map { margin-top: 14px; }
 
+/* Map expands in place under the contact details. The frame has a fixed height,
+   so the box animates to that exact height — the 0fr/1fr trick can't be used
+   here because an overflow:hidden child has a min-content size of 0, which
+   collapses the fr track back to zero. */
+.ct__mapbox {
+  --map-h: 420px;
+  --map-gap: clamp(22px, 2.4vw, 32px);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 550ms var(--ease), opacity 400ms var(--ease);
+}
+.ct__mapbox.is-open {
+  height: calc(var(--map-h) + var(--map-gap));
+  opacity: 1;
+}
+.ct__mapframe {
+  display: block;
+  width: 100%;
+  height: var(--map-h);
+  margin-top: var(--map-gap);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-img);
+  background: var(--paper-2);
+}
+
 .form {
   background: var(--white);
   border: 1px solid var(--rule);
@@ -1234,6 +1260,7 @@
   .cmp--hero .cmp__box { aspect-ratio: 1 / 1; }
   .cmp--wide .cmp__box { aspect-ratio: 4 / 3; }
   .rev { width: 78vw; max-width: 340px; }
+  .ct__mapbox { --map-h: 300px; }
 }
 
 @media (max-width: 520px) {
