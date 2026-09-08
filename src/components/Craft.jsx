@@ -3,15 +3,15 @@ import { Annot, AnnotList } from '../ui/Annot.jsx'
 import { Reveal } from '../ui/Reveal.jsx'
 
 const PLATE_A = [
-  { n: '01', label: 'Połączenia', x: 52, y: 51, accent: 'cold' },
-  { n: '02', label: 'Kształtki', x: 69, y: 17, accent: 'hot' },
-  { n: '03', label: 'Dobór średnic', x: 86, y: 78, accent: 'cold' },
+  { n: '01', label: 'Połączenie', x: 52, y: 51, accent: 'cold' },
+  { n: '02', label: 'Armatura', x: 69, y: 17, accent: 'hot' },
+  { n: '03', label: 'Rura', x: 86, y: 78, accent: 'cold' },
 ]
 
 const PLATE_B = [
-  { n: '04', label: 'Próba szczelności', x: 24, y: 17, accent: 'hot' },
-  { n: '05', label: 'Rozdzielacze', x: 34, y: 61, accent: 'cold' },
-  { n: '06', label: 'Izolacja', x: 20, y: 79, accent: 'hot' },
+  { n: '04', label: 'Zasilanie', x: 43, y: 20, accent: 'hot' },
+  { n: '05', label: 'Powrót', x: 43, y: 62, accent: 'cold' },
+  { n: '06', label: 'Rozdział instalacji', x: 20, y: 79, accent: 'hot' },
 ]
 
 export default function Craft() {
@@ -21,11 +21,11 @@ export default function Craft() {
         <Reveal className="sec-head sec-head--split">
           <div>
             <p className="tech sec-head__eyebrow">Detale</p>
-            <h2 className="h-section" id="craft-h">Zdjęcia<br />z pracy</h2>
+            <h2 className="h-section" id="craft-h">Porządek<br />w instalacji<br />ma znaczenie</h2>
           </div>
           <p className="lead">
-            Połączenia, rozdzielacze i izolacja. Tak wygląda instalacja od środka,
-            zanim zakryje ją ściana.
+            Dobra instalacja powinna być dobrze połączona i łatwa
+            do późniejszego serwisu.
           </p>
         </Reveal>
 
@@ -52,7 +52,7 @@ export default function Craft() {
         </div>
 
         <p className="craft__note">
-          Czerwony to woda ciepła, niebieski to zimna. Trzymamy ten sam porządek
+          Czerwony to zasilanie, niebieski to powrót. Trzymamy ten sam porządek
           na całej instalacji, żeby dało się ją później obsłużyć.
         </p>
 
@@ -75,7 +75,7 @@ export default function Craft() {
               </div>
             </div>
             <figcaption className="plate__cap tech">
-              Rozdzielacz ogrzewania podłogowego
+              Rozdzielacz instalacji grzewczej
             </figcaption>
           </figure>
         </div>

@@ -4,7 +4,7 @@ import { HeroFlow } from '../ui/Flow.jsx'
 import { Arrow } from './Nav.jsx'
 
 const EASE = [0.22, 1, 0.36, 1]
-const LINES = ['ROBIMY HYDRAULIKĘ', 'DOBRZE I PROSTO.']
+const LINES = ['INSTALACJE', 'ZROBIONE', 'PORZĄDNIE.']
 
 export default function Hero() {
   return (
@@ -20,9 +20,8 @@ export default function Hero() {
         >
           <p className="tech hero__eyebrow">
             <span className="dot dot--cold" />
-            Hydraulik
-            <span className="sep">•</span>Instalacje
-            <span className="sep">•</span>Naprawy
+            Zakład hydrauliczny
+            <span className="sep">•</span>Łódź
           </p>
           <a href="tel:+48000000000" className="hero__tel tech">+48 XXX XXX XXX</a>
         </m.div>
@@ -48,14 +47,19 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.66, ease: EASE }}
         >
-          <p className="lead hero__lead">
-            Naprawy, nowe instalacje, wymiany i podłączenia.
-            W domu, mieszkaniu i firmie.
-          </p>
+          <div className="hero__foot-copy">
+            <p className="lead hero__lead">
+              Woda, kanalizacja, ogrzewanie i instalacje gazowe.
+              Od małych prac po większe instalacje w budynkach.
+            </p>
+            <p className="hero__since">
+              Zakład Hydrauliczny Jacek Czuber działa od 1997 roku.
+            </p>
+          </div>
 
           <div className="hero__ctas">
             <a href="#kontakt" className="btn btn--dark btn--lg">
-              <span>Umów wizytę</span>
+              <span>Zapytaj o wycenę</span>
               <Arrow />
             </a>
             <a href="#realizacje" className="btn btn--ghost btn--lg">
@@ -81,7 +85,7 @@ export default function Hero() {
         />
         <p className="hero__hint tech">
           <span className="hero__hint-line" />
-          Najedź i zobacz zmianę
+          Przesuń kursorem, żeby zobaczyć instalację
         </p>
       </m.div>
     </section>

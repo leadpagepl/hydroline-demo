@@ -14,7 +14,7 @@ export default function About() {
           />
           <p className="about__cap tech">
             <span className="dot dot--cold" />
-            Imię i nazwisko — do uzupełnienia
+            Jacek Czuber — Zakład Hydrauliczny
           </p>
         </Reveal>
 
@@ -23,22 +23,22 @@ export default function About() {
             tag="h2"
             id="about-h"
             className="display about__title"
-            lines={['O NAS']}
+            lines={['ZAKŁAD', 'HYDRAULICZNY', 'JACKA CZUBERA']}
           />
           <Reveal delay={0.12}>
             <p className="lead about__lead">
-              Robimy hydraulikę w domach, mieszkaniach i małych firmach.
-              Zajmujemy się naprawami, montażem i nowymi instalacjami.
+              Firma działa od 1997 roku. Siedziba zakładu znajduje się
+              przy ul. Stefana Jaracza 76 w Łodzi.
             </p>
             <p className="about__p">
-              Pracujemy czysto, dokładnie i na czas. Jeśli w trakcie wyjdzie
-              dodatkowy problem, najpierw o nim mówimy.
+              Zajmujemy się instalacjami wodnymi, kanalizacyjnymi, grzewczymi
+              i gazowymi. Robimy nowe instalacje oraz modernizujemy stare.
             </p>
             <ul className="about__pts">
-              <li><span className="tech">Jasne zasady</span></li>
-              <li><span className="tech">Dobry kontakt</span></li>
-              <li><span className="tech">Dokładna praca</span></li>
-              <li><span className="tech">Bez zbędnych kosztów</span></li>
+              <li><span className="tech">Od 1997 roku</span></li>
+              <li><span className="tech">Łódź, ul. Stefana Jaracza 76</span></li>
+              <li><span className="tech">Nowe instalacje i modernizacje</span></li>
+              <li><span className="tech">Mniejsze prace i większe instalacje</span></li>
             </ul>
           </Reveal>
         </div>

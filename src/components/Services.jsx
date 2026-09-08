@@ -2,22 +2,18 @@ import { useState } from 'react'
 import { Reveal } from '../ui/Reveal.jsx'
 
 const SERVICES = [
-  { n: '01', t: 'Naprawa przecieków', a: 'cold',
-    d: 'Szybko znajdujemy wyciek i usuwamy problem.' },
-  { n: '02', t: 'Montaż baterii i WC', a: 'cold',
-    d: 'Montujemy baterie, umywalki, WC i kabiny.' },
-  { n: '03', t: 'Udrażnianie odpływów', a: 'cold',
-    d: 'Czyścimy zapchane odpływy i rury.' },
-  { n: '04', t: 'Wymiana rur', a: 'cold',
-    d: 'Wymieniamy stare rury na nowe i szczelne.' },
-  { n: '05', t: 'Montaż bojlerów i podgrzewaczy', a: 'hot',
-    d: 'Podłączamy nowy bojler albo wymieniamy stary.' },
-  { n: '06', t: 'Instalacje wodne i kanalizacyjne', a: 'cold',
-    d: 'Robimy nową instalację od początku do końca.' },
-  { n: '07', t: 'Ogrzewanie podłogowe', a: 'hot',
-    d: 'Układamy pętle i podłączamy rozdzielacz.' },
-  { n: '08', t: 'Modernizacja instalacji', a: 'hot',
-    d: 'Przerabiamy starą instalację na nową.' },
+  { n: '01', t: 'Instalacje wodne', a: 'cold',
+    d: 'Nowe instalacje zimnej i ciepłej wody. Wymiana starych rur i podłączeń.' },
+  { n: '02', t: 'Kanalizacja', a: 'cold',
+    d: 'Odpływy, piony kanalizacyjne i podłączenia urządzeń.' },
+  { n: '03', t: 'Centralne ogrzewanie', a: 'hot',
+    d: 'Nowe instalacje grzewcze oraz wymiana i modernizacja istniejących.' },
+  { n: '04', t: 'Instalacje gazowe', a: 'hot',
+    d: 'Montaż i modernizacja instalacji gazowych.' },
+  { n: '05', t: 'Ciepła woda', a: 'hot',
+    d: 'Instalacje ciepłej wody w mieszkaniach i większych budynkach.' },
+  { n: '06', t: 'Większe instalacje', a: 'cold',
+    d: 'Prace instalacyjne także w budynkach wielorodzinnych i większych obiektach.' },
 ]
 
 export default function Services() {
@@ -28,9 +24,10 @@ export default function Services() {
       <div className="wrap">
         <Reveal className="sec-head">
           <p className="tech sec-head__eyebrow">Zakres</p>
-          <h2 className="h-section" id="svc-h">Usługi</h2>
+          <h2 className="h-section" id="svc-h">Czym się zajmujemy</h2>
           <p className="lead sec-head__lead">
-            Małe naprawy i całe instalacje. Robimy jedno i drugie.
+            Robimy nowe instalacje, wymieniamy stare i poprawiamy te,
+            które wymagają naprawy.
           </p>
         </Reveal>
 

@@ -8,10 +8,11 @@ export default function Projects() {
         <Reveal className="sec-head sec-head--split">
           <div>
             <p className="tech sec-head__eyebrow">Nasze prace</p>
-            <h2 className="h-section" id="proj-h">Realizacje</h2>
+            <h2 className="h-section" id="proj-h">Od małej naprawy<br />po większą<br />instalację</h2>
           </div>
           <p className="lead">
-            Zdjęcia przed pracą i po pracy. Przesuń suwak, aby porównać.
+            Pracujemy przy mieszkaniach, domach i większych budynkach.
+            Przesuń suwak, aby porównać.
           </p>
         </Reveal>
       </div>
@@ -44,8 +45,8 @@ export default function Projects() {
             <dd>Prostszy układ. Widać, co gdzie idzie, i da się to obsłużyć.</dd>
           </div>
           <div>
-            <dt className="tech">Miejsce</dt>
-            <dd className="is-placeholder">Dom jednorodzinny — miejscowość do uzupełnienia</dd>
+            <dt className="tech">Zakres</dt>
+            <dd>Centralne ogrzewanie i ciepła woda.</dd>
           </div>
         </dl>
       </article>
@@ -66,8 +67,8 @@ export default function Projects() {
               <dd>Wymiana zużytych elementów, nowe zawory i poprawione połączenia.</dd>
             </div>
             <div>
-              <dt className="tech">Efekt</dt>
-              <dd>Widać każdą rurę. Przy następnej usterce nie trzeba zgadywać.</dd>
+              <dt className="tech">Zakres</dt>
+              <dd>Instalacja wodna i kanalizacyjna.</dd>
             </div>
           </dl>
           <p className="case__hint tech">Przesuń w pionie, aby porównać</p>

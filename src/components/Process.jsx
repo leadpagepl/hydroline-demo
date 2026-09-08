@@ -3,11 +3,14 @@ import Img from '../ui/Img.jsx'
 import { Reveal, RevealLines } from '../ui/Reveal.jsx'
 
 const STEPS = [
-  { n: '01', t: 'Kontakt', d: 'Piszesz lub dzwonisz.' },
-  { n: '02', t: 'Oględziny', d: 'Sprawdzamy, co trzeba zrobić.' },
-  { n: '03', t: 'Wycena', d: 'Mówimy, ile to będzie kosztować.' },
-  { n: '04', t: 'Praca', d: 'Robimy to, co ustaliliśmy.' },
-  { n: '05', t: 'Sprawdzenie', d: 'Na końcu sprawdzamy, czy wszystko działa.' },
+  { n: '01', t: 'Powiedz, co trzeba zrobić',
+    d: 'Krótko opisz pracę. Jeśli masz zdjęcia instalacji, możesz je przygotować przed rozmową.' },
+  { n: '02', t: 'Ustalamy zakres',
+    d: 'Sprawdzamy, co trzeba zrobić i jakie prace będą potrzebne.' },
+  { n: '03', t: 'Wycena',
+    d: 'Po ustaleniu zakresu można określić koszt prac.' },
+  { n: '04', t: 'Realizacja',
+    d: 'Ustalamy termin i wykonujemy uzgodnione prace.' },
 ]
 
 export default function Process() {
@@ -38,7 +41,7 @@ export default function Process() {
             tag="h2"
             id="proc-h"
             className="display proc__title"
-            lines={['JAK', 'PRACUJEMY']}
+            lines={['MASZ INSTALACJĘ', 'DO ZROBIENIA?']}
           />
           <Reveal className="proc__figure" delay={0.1}>
             <Img
@@ -50,7 +53,7 @@ export default function Process() {
             />
             <span className="proc__cap tech">
               <span className="dot dot--cold" />
-              Zakres ustalamy przed rozpoczęciem pracy
+              Zakres ustalamy przed rozpoczęciem prac
             </span>
           </Reveal>
         </div>

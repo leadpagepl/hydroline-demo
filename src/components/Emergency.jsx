@@ -9,22 +9,22 @@ export default function Emergency() {
         <div className="emg__body">
           <p className="tech emg__badge">
             <span className="emg__pulse" aria-hidden="true" />
-            Awarie i naprawy
+            Doświadczenie
           </p>
           <RevealLines
             tag="h2"
             id="emg-h"
             className="display emg__title"
-            lines={['AWARIA?', 'ZADZWOŃ.']}
+            lines={['ROBIMY TEŻ', 'WIĘKSZE', 'INSTALACJE.']}
           />
           <Reveal delay={0.12}>
             <p className="lead emg__lead">
-              Cieknie, nie ma ciepłej wody albo zapchał się odpływ?
-              Przyjedziemy i sprawdzimy, co się dzieje.
+              Zakład wykonywał również prace instalacyjne w budynkach
+              wielorodzinnych.
             </p>
             <div className="emg__ctas">
               <a href="#kontakt" className="btn btn--light btn--lg">
-                <span>Zgłoś awarię</span>
+                <span>Zapytaj o wycenę</span>
                 <Arrow />
               </a>
               <a href="tel:+48000000000" className="emg__tel tech">
@@ -32,9 +32,9 @@ export default function Emergency() {
               </a>
             </div>
             <ul className="emg__list">
-              <li><span className="tech">Najpierw szukamy przyczyny</span></li>
-              <li><span className="tech">Odcinamy wodę i zabezpieczamy miejsce</span></li>
-              <li><span className="tech">Mówimy, co trzeba wymienić</span></li>
+              <li><span className="tech">Ogrzewanie</span></li>
+              <li><span className="tech">Ciepła woda</span></li>
+              <li><span className="tech">Instalacje wodne i kanalizacyjne</span></li>
             </ul>
           </Reveal>
         </div>
@@ -42,7 +42,7 @@ export default function Emergency() {
         <Reveal className="emg__media" delay={0.1} y={30}>
           <Img
             name="emergency-leak-service"
-            alt="Szukanie przyczyny przecieku pod umywalką"
+            alt="Prace instalacyjne przy podejściach wodnych i kanalizacyjnych"
             sizes="(max-width: 900px) 92vw, 44vw"
             className="emg__img"
           />

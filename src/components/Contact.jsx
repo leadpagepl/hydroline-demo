@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Reveal, RevealLines } from '../ui/Reveal.jsx'
 import { Arrow } from './Nav.jsx'
 
-const KINDS = ['Nowa instalacja', 'Modernizacja', 'Ogrzewanie', 'Kotłownia', 'Naprawa', 'Awaria', 'Inne']
+const KINDS = ['Instalacja wodna', 'Kanalizacja', 'Ogrzewanie', 'Ciepła woda', 'Instalacja gazowa', 'Naprawa', 'Inne']
 
 export default function Contact() {
   const [kind, setKind] = useState('Nowa instalacja')
@@ -22,28 +22,36 @@ export default function Contact() {
             tag="h2"
             id="ct-h"
             className="display ct__title"
-            lines={['KONTAKT']}
+            lines={['POROZMAWIAJMY', 'O TWOJEJ', 'INSTALACJI.']}
           />
           <Reveal delay={0.12}>
             <p className="lead ct__lead">
-              Masz problem z instalacją albo chcesz coś zrobić od nowa?
-              Napisz lub zadzwoń.
+              Masz instalację do wykonania albo naprawy?
+              Skontaktuj się i powiedz, czego potrzebujesz.
             </p>
 
             <div className="ct__alt">
               <p className="tech ct__alt-h">Telefon</p>
               <a href="tel:+48000000000" className="ct__tel">+48 XXX XXX XXX</a>
-              <p className="ct__alt-note">Możesz też zadzwonić. Jeśli nie odbieramy, oddzwonimy.</p>
+              <p className="ct__alt-note is-placeholder">Numer telefonu do uzupełnienia.</p>
             </div>
 
             <dl className="ct__facts">
               <div>
-                <dt className="tech">Gdzie jeździmy</dt>
-                <dd className="is-placeholder">Miasto i okolice — do uzupełnienia</dd>
+                <dt className="tech">Firma</dt>
+                <dd>Jacek Czuber<br />Zakład Hydrauliczny</dd>
               </div>
               <div>
-                <dt className="tech">E-mail</dt>
-                <dd className="is-placeholder">kontakt@domena.pl — do uzupełnienia</dd>
+                <dt className="tech">Adres</dt>
+                <dd>ul. Stefana Jaracza 76<br />90-251 Łódź</dd>
+                <a
+                  className="ctrl ct__map"
+                  href="https://www.google.com/maps/search/?api=1&query=ul.+Stefana+Jaracza+76%2C+90-251+%C5%81%C3%B3d%C5%BA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pokaż na mapie
+                </a>
               </div>
             </dl>
           </Reveal>
@@ -94,7 +102,7 @@ export default function Contact() {
                 <Arrow />
               </button>
               <p className="form__note">
-                Przy awarii lepiej zadzwonić.
+                Im więcej szczegółów, tym łatwiej wycenić pracę.
               </p>
             </div>
 

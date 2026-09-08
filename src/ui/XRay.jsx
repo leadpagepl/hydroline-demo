@@ -125,7 +125,7 @@ export default function XRay({ top, under, topAlt, underAlt, sizes, label = 'Pod
         onClick={() => setHeld((v) => !v)}
       >
         <span className="ctrl__dot" />
-        {held ? 'Pokaż gotowe' : 'Pokaż instalację'}
+        {held ? 'Ukryj instalację' : 'Pokaż instalację'}
       </button>
     </figure>
   )

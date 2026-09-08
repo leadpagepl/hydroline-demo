@@ -2,10 +2,10 @@ import { Reveal } from '../ui/Reveal.jsx'
 import { Motif } from '../ui/Flow.jsx'
 
 const VALUES = [
-  { t: 'Szybki kontakt', d: 'Odpowiadamy sprawnie i jasno.' },
-  { t: 'Dokładna robota', d: 'Robimy to porządnie i schludnie.' },
-  { t: 'Jasna wycena', d: 'Wiesz, za co płacisz.' },
-  { t: 'Doświadczenie', d: 'Znamy się na instalacjach i naprawach.' },
+  { t: 'Od 1997 roku', d: 'Firma działa na rynku od wielu lat.' },
+  { t: 'Większe realizacje', d: 'Doświadczenie przy instalacjach w budynkach wielorodzinnych.' },
+  { t: 'Szeroki zakres', d: 'Woda, kanalizacja, ogrzewanie i gaz.' },
+  { t: 'Nowe i modernizacje', d: 'Robimy nowe instalacje i modernizujemy stare.' },
 ]
 
 export default function Values() {
@@ -13,8 +13,8 @@ export default function Values() {
     <section className="vals" aria-labelledby="vals-h">
       <div className="wrap">
         <Reveal className="sec-head">
-          <p className="tech sec-head__eyebrow">Zasady</p>
-          <h2 className="h-section" id="vals-h">Dlaczego my</h2>
+          <p className="tech sec-head__eyebrow">Firma</p>
+          <h2 className="h-section" id="vals-h">Doświadczenie,<br />które można sprawdzić</h2>
         </Reveal>
 
         <ul className="vals__grid">

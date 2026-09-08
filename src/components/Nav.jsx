@@ -4,8 +4,7 @@ import { AnimatePresence, m } from 'framer-motion'
 export const NAV_LINKS = [
   { label: 'USŁUGI', href: '#uslugi' },
   { label: 'REALIZACJE', href: '#realizacje' },
-  { label: 'O NAS', href: '#o-nas' },
-  { label: 'AWARIE', href: '#serwis' },
+  { label: 'O FIRMIE', href: '#o-nas' },
   { label: 'KONTAKT', href: '#kontakt' },
 ]
 
@@ -32,9 +31,9 @@ export default function Nav() {
   return (
     <header className={`nav ${stuck ? 'is-stuck' : ''}`}>
       <div className="nav__inner wrap">
-        <a className="mark" href="#top" aria-label="HYDROLINE — strona główna">
-          <span className="mark__name">HYDROLINE</span>
-          <span className="mark__sub tech">Instalacje wodne i grzewcze</span>
+        <a className="mark" href="#top" aria-label="Jacek Czuber, Zakład Hydrauliczny — strona główna">
+          <span className="mark__name">JACEK CZUBER</span>
+          <span className="mark__sub tech">Zakład Hydrauliczny</span>
         </a>
 
         <nav className="nav__links" aria-label="Główna">
@@ -47,7 +46,7 @@ export default function Nav() {
 
         <div className="nav__end">
           <a href="#kontakt" className="btn btn--dark nav__cta">
-            <span>Umów wizytę</span>
+            <span>Zapytaj o wycenę</span>
             <Arrow />
           </a>
           <button
@@ -93,7 +92,7 @@ export default function Nav() {
               </ul>
               <div className="menu__foot">
                 <a href="#kontakt" className="btn btn--dark" onClick={() => setOpen(false)}>
-                  <span>Umów wizytę</span>
+                  <span>Zapytaj o wycenę</span>
                   <Arrow />
                 </a>
                 <a href="tel:+48000000000" className="menu__tel tech">+48 XXX XXX XXX</a>
